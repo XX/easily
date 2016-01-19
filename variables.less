@@ -380,17 +380,21 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             @gray;
+@navbar-default-color:             lighten(@text-color, 5%);
+//@gray;
 @navbar-default-bg:                #fff;
-@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-border:            @brand-primary;
+//darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                @gray;
-@navbar-default-link-hover-color:          @brand-primary;
+@navbar-default-link-color:                @navbar-default-color;
+//@gray;
+@navbar-default-link-hover-color:          lighten(@navbar-default-color, 18%);
+//@brand-primary;
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         @navbar-default-link-hover-color;
 @navbar-default-link-active-bg:            transparent;
-@navbar-default-link-disabled-color:       #444;
+@navbar-default-link-disabled-color:       lighten(@navbar-default-color, 50%);//#444;
 @navbar-default-link-disabled-bg:          transparent;
 
 // Navbar brand label
@@ -406,13 +410,15 @@
 
 //=== Inverted navbar
 // Reset inverted navbar basics
-@navbar-inverse-color:                      lighten(@brand-primary, 40%);
+@navbar-inverse-color:                      #fff;//lighten(@brand-primary, 40%);
 @navbar-inverse-bg:                         @brand-primary;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 lighten(@brand-primary, 40%);
-@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-color:                 @navbar-inverse-color;
+//lighten(@brand-primary, 40%);
+@navbar-inverse-link-hover-color:           lighten(@text-color, 5%);
+//#fff;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
 @navbar-inverse-link-active-bg:             transparent;
