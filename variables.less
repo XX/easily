@@ -26,7 +26,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;//#FCFCFC;
+@body-bg:               #fff;
 //** Global text color on `<body>`.
 @text-color:            @gray-dark;
 
@@ -152,11 +152,8 @@
 @btn-font-weight:                normal;
 
 @btn-default-color:              @gray-dark;
-//#999;//#777;
 @btn-default-bg:                 @brand-default;
-//#fbfbfb;
 @btn-default-bg-hover:           lighten(@btn-default-bg, 5%);
-//#fff;
 
 @btn-default-border:             @btn-default-bg;
 
@@ -167,33 +164,21 @@
 
 @btn-success-color:              @btn-default-color;
 @btn-success-bg:                 @brand-success;
-//#A0E035;
-//#90ED20;
-//@brand-success;
 @btn-success-bg-hover:           lighten(@btn-success-bg, 10%);
 @btn-success-border:             @btn-success-bg;
 
 @btn-info-color:                 @btn-default-color;
 @btn-info-bg:                    @brand-info;
-//#80C0FF;
-//#60AACC;
-//@brand-info;
 @btn-info-bg-hover:              lighten(@btn-info-bg, 10%);
 @btn-info-border:                @btn-info-bg;
 
 @btn-warning-color:              @btn-default-color;
 @btn-warning-bg:                 @brand-warning;
-//#DCA52F;
-//#DC992F;
-//@brand-warning;
 @btn-warning-bg-hover:           lighten(@btn-warning-bg, 10%);
 @btn-warning-border:             @btn-warning-bg;
 
 @btn-danger-color:               @btn-default-color;
 @btn-danger-bg:                  @brand-danger;
-//#FF6850;
-//#DC4020;
-//@brand-danger;
 @btn-danger-bg-hover:           lighten(@btn-danger-bg, 10%);
 @btn-danger-border:              @btn-danger-bg;
 
@@ -499,17 +484,24 @@
 //
 //##
 
-@pager-bg:                             @pagination-bg;
+@pager-color:                          @headings-color;
+@pager-bg:                             @body-bg;
+//@pagination-bg;
 @pager-border:                         @gray-lighter;
 //@pagination-border;
 @pager-border-radius:                  15px;
 
-@pager-hover-bg:                       lighten(@brand-primary, 60%);
-@pager-hover-border:                   lighten(@brand-primary, 60%);
+@pager-hover-color:                    darken(@pager-color, 30%);
+@pager-hover-bg:                       lighten(@brand-primary, 10%);
+//lighten(@brand-primary, 60%);
+@pager-hover-border:                   @pager-border;
+//lighten(@brand-primary, 60%);
 
-@pager-active-bg:                      lighten(@brand-primary, 40%);
+@pager-active-bg:                      @brand-primary;
+//lighten(@brand-primary, 40%);
 //@pager-active-border:                  lighten(@brand-primary, 40%);
-@pager-active-color:                   #fff;
+@pager-active-color:                   lighten(@pager-color, 20%);
+//#fff;
 
 @pager-disabled-color:                 @gray-lighter;
 
@@ -602,18 +594,18 @@
 //##
 
 //** Default label background color
-@label-default-bg:            darken(@brand-default, 7%);
+@label-default-bg:            #d0d0d0;//darken(@brand-default, 7%);
 //@btn-default-bg;
 //** Primary label background color
-@label-primary-bg:            darken(@brand-primary, 7%);
+@label-primary-bg:            #a6a6a6;//darken(@brand-primary, 7%);
 //** Success label background color
-@label-success-bg:            darken(@brand-success, 5%);
+@label-success-bg:            #80b61a;//darken(@brand-success, 5%);
 //** Info label background color
-@label-info-bg:               darken(@brand-info, 5%);
+@label-info-bg:               #5792d0;//darken(@brand-info, 5%);
 //** Warning label background color
-@label-warning-bg:            darken(@brand-warning, 5%);
+@label-warning-bg:            #ff8e30;//darken(@brand-warning, 5%);
 //** Danger label background color
-@label-danger-bg:             darken(@brand-danger, 5%);
+@label-danger-bg:             #fe543b;//darken(@brand-danger, 5%);
 
 //** Default label text color
 @label-color:                 #fff;

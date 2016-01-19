@@ -4876,7 +4876,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
 }
 .pager .next > a,
 .pager .next > span {
@@ -4920,46 +4920,46 @@ a.label:focus {
   top: -1px;
 }
 .label-default {
-  background-color: #e5e5e5;
+  background-color: #d0d0d0;
 }
 .label-default[href]:hover,
 .label-default[href]:focus {
-  background-color: #cccccc;
+  background-color: #b7b7b7;
 }
 .label-primary {
-  background-color: #c9c9ca;
+  background-color: #a6a6a6;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #afafb1;
+  background-color: #8d8d8d;
 }
 .label-success {
-  background-color: #9dde2a;
+  background-color: #80b61a;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #80b81d;
+  background-color: #618914;
 }
 .label-info {
-  background-color: #73ace8;
+  background-color: #5792d0;
 }
 .label-info[href]:hover,
 .label-info[href]:focus {
-  background-color: #4792e1;
+  background-color: #3578bf;
 }
 .label-warning {
-  background-color: #ff9f26;
+  background-color: #ff8e30;
 }
 .label-warning[href]:hover,
 .label-warning[href]:focus {
-  background-color: #f38700;
+  background-color: #fc7200;
 }
 .label-danger {
-  background-color: #fa543b;
+  background-color: #fe543b;
 }
 .label-danger[href]:hover,
 .label-danger[href]:focus {
-  background-color: #f92909;
+  background-color: #fe2808;
 }
 .badge {
   display: inline-block;
@@ -7005,8 +7005,8 @@ label {
 }
 .pager a:hover,
 .pager .active > a {
-  border-color: #ffffff;
-  color: #fff;
+  border-color: #dddddd;
+  color: #000000;
 }
 .pager .disabled > a {
   border-color: #dddddd;
