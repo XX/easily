@@ -472,13 +472,13 @@
 @pagination-bg:                        @body-bg;
 @pagination-border:                    @gray-lighter;
 
-@pagination-hover-color:               darken(@pagination-color, 30%);
-@pagination-hover-bg:                  lighten(@brand-primary, 10%);
-@pagination-hover-border:              @pagination-border;
+@pagination-hover-color:               #fff;//darken(@pagination-color, 30%);
+@pagination-hover-bg:                  lighten(@brand-primary, 6%);
+@pagination-hover-border:              @brand-primary;
 
-@pagination-active-color:              lighten(@pagination-color, 20%);
+@pagination-active-color:              #fff;//lighten(@pagination-color, 90%);
 @pagination-active-bg:                 @brand-primary;
-@pagination-active-border:             @pagination-border;
+@pagination-active-border:             darken(@brand-primary, 10%);
 
 @pagination-disabled-color:            @gray-lighter;
 @pagination-disabled-bg:               @body-bg;
@@ -490,25 +490,19 @@
 //##
 
 @pager-color:                          @headings-color;
-@pager-bg:                             @body-bg;
-//@pagination-bg;
-@pager-border:                         @gray-lighter;
-//@pagination-border;
+@pager-bg:                             @pagination-bg;
+@pager-border:                         @pagination-border;
 @pager-border-radius:                  15px;
 
-@pager-hover-color:                    darken(@pager-color, 30%);
-@pager-hover-bg:                       lighten(@brand-primary, 10%);
-//lighten(@brand-primary, 60%);
-@pager-hover-border:                   @pager-border;
-//lighten(@brand-primary, 60%);
+@pager-hover-color:                    @pagination-hover-color;
+@pager-hover-bg:                       @pagination-hover-bg;
+@pager-hover-border:                   @pagination-hover-border;
 
+@pager-active-color:                   @pagination-active-color;
 @pager-active-bg:                      @brand-primary;
-//lighten(@brand-primary, 40%);
-//@pager-active-border:                  lighten(@brand-primary, 40%);
-@pager-active-color:                   lighten(@pager-color, 20%);
-//#fff;
+@pager-active-border:                  @pagination-active-border;
 
-@pager-disabled-color:                 @gray-lighter;
+@pager-disabled-color:                 @pagination-disabled-color;
 
 
 //== Jumbotron
