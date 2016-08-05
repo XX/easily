@@ -9,7 +9,7 @@
 
 @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
-@gray-dark:              #444;
+@gray-dark:              #445052;//#576062;//#444;
 @gray:                   #777;
 @gray-light:             #808080;
 @gray-lighter:           #ddd;
@@ -31,9 +31,9 @@
 @text-color:            @gray-dark;
 
 //** Global textual link color.
-@link-color:            @brand-primary;
+@link-color:            darken(@brand-success, 5%);
 //** Link hover color set via `darken()` function.
-@link-hover-color:      darken(@link-color, 15%);
+@link-hover-color:      darken(@link-color, 10%);
 //** Link hover decoration.
 @link-hover-decoration: underline;
 
@@ -195,16 +195,15 @@
 //##
 
 //** `<input>` background color
-@input-bg:                       #fff;
+@input-bg:                       #ffffff;
 //** `<input disabled>` background color
-@input-bg-disabled:              @gray-lighter;
+@input-bg-disabled:              darken(@body-bg, 3%);//lighten(@gray-lighter, 10%);
 
 //** Text color for `<input>`s
 @input-color:                    @text-color;
 //** `<input>` border color
 @input-border:                   #ddd;
 
-// TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
 // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
 @input-border-radius:            @border-radius-base;
@@ -216,10 +215,10 @@
 //** Border color for inputs on focus
 //@input-border-focus:             #66afe9;
 //Input on focus is the same color as checkbox on focus
-@input-border-focus:             #6ed4ff;
+@input-border-focus:             @brand-primary;//#6ed4ff;
 
 //** Placeholder text color
-@input-color-placeholder:        @gray-lighter;
+@input-color-placeholder:        darken(@gray-lighter, 10%);
 
 //** Default `.form-control` height
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
@@ -235,12 +234,12 @@
 @legend-border-color:            #e5e5e5;
 
 //** Background color for textual input addons
-@input-group-addon-bg:           @gray-lighter;
+@input-group-addon-bg:           lighten(@gray-lighter, 8%);
 //** Border color for textual input addons
 @input-group-addon-border-color: @input-border;
 
 //** Disabled cursor for form controls and buttons.
-@cursor-disabled:                not-allowed;
+@cursor-disabled:                default;//not-allowed;
 
 
 //== Dropdowns

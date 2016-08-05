@@ -98,7 +98,42 @@ label {
   font-weight: normal;
 }
 
+.form-control:hover:not(:focus):not([disabled]) {
+    border-color: lighten(@gray-light, 20%);
+}
+
+.form-control:focus {
+    -webkit-box-shadow: none;//inset 0 1px 1px rgba(0,0,0,.075), 0 0 1px rgba(110, 212, 255, 0.6);
+    box-shadow: none;//inset 0 1px 1px rgba(0,0,0,.075), 0 0 1px rgba(110, 212, 255, 0.6);
+}
+
 .has-warning {
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline,
+  &.radio label,
+  &.checkbox label,
+  &.radio-inline label,
+  &.checkbox-inline label,
+  .form-control-feedback {
+    color: @brand-warning;
+  }
+
+  .form-control,
+  .form-control:focus {
+    border-color: @brand-warning;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .form-control:hover:not(:focus):not([disabled]) {
+    border-color: darken(@brand-warning, 20%);
+  }
+}
+
+.has-error {
   .help-block,
   .control-label,
   .radio,
@@ -116,27 +151,11 @@ label {
   .form-control,
   .form-control:focus {
     border-color: @brand-danger;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
-}
-
-.has-error {
-  .help-block,
-  .control-label,
-  .radio,
-  .checkbox,
-  .radio-inline,
-  .checkbox-inline,
-  &.radio label,
-  &.checkbox label,
-  &.radio-inline label,
-  &.checkbox-inline label,
-  .form-control-feedback {
-    color: @brand-primary;
-  }
-
-  .form-control,
-  .form-control:focus {
-    border-color: @brand-primary;
+  .form-control:hover:not(:focus):not([disabled]) {
+    border-color: darken(@brand-danger, 20%);
   }
 }
 
@@ -158,6 +177,11 @@ label {
   .form-control,
   .form-control:focus {
     border-color: @brand-success;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .form-control:hover:not(:focus):not([disabled]) {
+    border-color: darken(@brand-success, 15%);
   }
 }
 
